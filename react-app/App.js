@@ -5,7 +5,6 @@ const algorithmsData = [
     title: 'Square Sum',
     stars: 1,
     problem: 'Given an array, write a function <code>SqSum()</code> that squares every value and then returns their sum. For example, <code>SqSum([1,2,3])</code> would return 15.',
-    twitter: 'Given an array, write a function SqSum() that squares every value',
     solution: `function sqSum(array) {
       
       var arraySquared = array.map(function(n) {
@@ -24,7 +23,6 @@ const algorithmsData = [
     title: 'FizzBuzz',
     stars: 2,
     problem: 'Write a function <code>fizzbuzz()</code> that accepts an argument and returns "Fizz" if the number is divisible by 3, "Buzz" if divisible by 5, "FizzBuzz" if divisible by both, and the number if it is divisible by neither.',
-    twitter: 'Did you know that the FizzBuzz has eliminated many aspiring coders in the interview stage?',
     solution: `function fizzbuzz (n) {
       
       if (( n % 3 === 0 && n % 5 === 0)) {
@@ -44,7 +42,6 @@ const algorithmsData = [
     title: 'Chess Board',
     stars: 3,
     problem: 'Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines. At each position of the grid there is either a space or a “#” character. The characters should form a chess board. The string should look something like this when printed to the console:<br><br> # # # #<br>&nbsp;# # # #<br># # # #<br>&nbsp;# # # #<br><br>The width and height output should be stored in variables so you can easily change the size of the returned string.',
-    twitter: 'Use JavaScript to console.log a chessboard of hashes',
     solution: `function generateChessBoard(width, height) {
 
     var str = '';
@@ -79,7 +76,6 @@ const algorithmsData = [
     title: 'Seek and Destroy',
     stars: 1,
     problem: 'You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.',
-    twitter: 'Seek and destroy an array in JavaScript',
     solution: `function destroyer(arr) {
     
       var a = [];
@@ -114,7 +110,6 @@ const algorithmsData = [
     title: 'Even and Odd',
     stars: 1,
     problem: 'Using recursion, and without the modulus operator, write a function that determines if a positive or negative whole number is even or odd. The function, <code>isEven()</code>,should return <code>true</code> for even numbers and <code>false</code> for odd numbers. Hint: 1 is odd and 0 is even; the absolute value of any number can be reduced to 0 or 1 by N - 2.',
-    twitter: 'Defining even and odd numbers with recursion',
     solution: `function isEven(n) {
     
     if (n < 0) {
@@ -147,7 +142,6 @@ const algorithmsData = [
     title: 'The Sum of a Range',
     stars: 1,
     problem: 'Write two functions that take a range and return the sum, such that <code>sum(range(1, 10))</code> returns 55. The first function should return an array, which, when passed to the second function returns the sum of the contained values. Then, create an optional third parameter to the <code>sum()</code> function that indicates the step by which the range should be generated. For instance, <code>sum(1, 6, 2)</code> should return <code>[1, 3, 5]</code>. If this argument is not included, the step should default to 1.',
-    twitter: 'Summing a Range in JavaScript',
     solution: `function range(start, end, step) {    
         
         if (step == undefined) { step = 1 }
@@ -184,7 +178,6 @@ const algorithmsData = [
     title: 'Working with Lists',
     stars: 4,
     problem: 'Write two functions that convert data between an array and a list. The function <code>arrayToList(array)</code> should accept an array as input, e.g. <code>[1,2,3]</code>, and return a list, e.g. <code>list = { value: 1, rest: { value: 2, rest: { value: 3, rest: null } } };</code>, based on the array. The second function, <code>listToArray(list)</code>, should reverse this action and return the original array from the list object.',
-    twitter: 'Constructing a List Object from an Array, and Back Again',
     solution: `// arrayToList() function:
 
   var list = {};
@@ -260,7 +253,6 @@ const algorithmsData = [
     title: 'Finding a Product',
     stars: 1,
     problem: 'Write a function that takes a positive whole number and returns the product of all positive, even whole numbers less than and including that number. For instance, <code>productEven(6)</code> should return 48, (6 * 4 * 2). Passing 15 to this function should return 645,120.',
-    twitter: 'Finding the Product of Whole Numbers',
     solution: `var ans = 1;
 
   function productEven(n) {
@@ -281,7 +273,6 @@ const algorithmsData = [
     title: 'Filtering an Array',
     stars: 1,
     problem: 'Write a function that accepts an array of items and an item as arguments, and returns the array with the second argument item filtered out of it. If the item is not present, return <code>false</code>.',
-    twitter: 'Using JavaScripts array.filter() method',
     solution: `function filterVal(array, item) {
       
       var present = false;
@@ -368,7 +359,7 @@ class Title extends React.Component {
     return (
       <div className = "titleWrapper">
         <h1>JavaScript Algorithm Challenges</h1>
-        <p className = "description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a list of computer algorithm challenges paired with solutions intended to be useful to anyone looking to improve their coding skills, especially beginners. All of the answers are written in JavaScript. I've compiled these challenges from a number of sources, but many come from <a target = "_blank"  href="http://eloquentjavascript.net/">Eloquent Javascript</a> or <a target = "_blank" href="http://freecodecamp.com">Free Code Camp</a> both of which are excellent resources for anyone interested in JavaScript or Web Development.</p>
+        <p className = "description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a list of computer algorithm challenges paired with solutions intended to be useful to anyone looking to improve their coding skills, especially beginners. All of the answers are written in JavaScript. I've compiled these challenges from a number of sources, but some come from <a target = "_blank"  href="http://eloquentjavascript.net/">Eloquent Javascript</a> or <a target = "_blank" href="http://freecodecamp.com">Free Code Camp</a> both of which are excellent resources for anyone interested in learning JavaScript.</p>
         <p className = "description credits"><a target = "_blank" href="http://sean-smith.me">Coded by Sean Smith</a></p>
         <hr />
       </div>
