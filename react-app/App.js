@@ -453,6 +453,7 @@ class Algorithms extends React.Component {
       function createMarkup() { return {__html: algorithm.problem}; };
       return (
           <ReactCSSTransitionGroup 
+            key = {i}
             transitionName = 'algorithmsList'
             transitionEnterTimeout = {1000}
             transitionLeaveTimeout = {1000} >
